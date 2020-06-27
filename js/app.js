@@ -1,5 +1,4 @@
 'use strict';
-let user = (document.querySelector('#app').innerHTML = 'name');
 
 if (typeof Storage != 'undefined') {
 	if (localStorage.users) {
@@ -8,9 +7,13 @@ if (typeof Storage != 'undefined') {
 		// localStorage.users
 		localStorage.setItem('users', 1);
 	}
-	let saved = 'Number of visitors:' + localStorage.users;
-	let b = document.querySelector('#app');
-	b.innerHTML = saved;
+	// show number of visitors
+	let saved =
+		'Number of visitors: ' + localStorage.users + ' visitors views this page';
+	let users = document.querySelector('#app');
+	users.innerHTML = saved;
+	users.style.color = 'orange';
+	users.style.fontSize = '32px';
 } else {
 	document.write('This browser do not support!');
 }
