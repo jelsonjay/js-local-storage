@@ -6,6 +6,7 @@ if (typeof Storage != 'undefined') {
 	} else {
 		// localStorage.users
 		localStorage.setItem('users', 1);
+		localStorage.users = Number(localStorage.users) + 1;
 	}
 	document.write('users:' + localStorage.users);
 } else {
