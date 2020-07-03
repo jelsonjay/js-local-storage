@@ -1,2 +1,2 @@
-# JavaScript-Local-Storage
- Simlpe app ussing local storage - Web Storage
+# Web Browser Local Ltorage - JavaScript
+ Simlpe app using web browser local storage 
